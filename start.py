@@ -18,3 +18,8 @@ fileSpecs.write("Versión base del kernel:\t\t\t\t\t")
 fileSpecs.write(subprocess.run(["uname", "-sr"], stdout=subprocess.PIPE).stdout.decode("utf-8"))
 fileSpecs.write("Versión del kernel:\t\t\t\t\t\t\t")
 fileSpecs.write(subprocess.run(["uname", "-vmo"], stdout=subprocess.PIPE).stdout.decode("utf-8"))
+fileSpecs.write("Fecha de instalación original:\t\t\t\t")
+command = "ls -lct --time-style=long /etc | tail -1 | awk '{print $6, $7}'"
+outcommand = subprocess.run(command, shell=True, capture_output=True, text=True)
+fileSpecs.write(outcommand.stdout)
+fileSpecs.write("Fabricante del sistema:\t\t\t\t")
