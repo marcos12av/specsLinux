@@ -20,7 +20,7 @@ class linuxSpec:
                 return hardwareVendor
     
     def shellCMD(self, shellCMD):
-        outcommand = subprocess.run(["hostname", "-I"], stdout=subprocess.PIPE).stdout.decode("utf-8")
+        outcommand = subprocess.run([shellCMD], stdout=subprocess.PIPE).stdout.decode("utf-8")
         return outcommand
     
 systemOS = linuxSpec()
