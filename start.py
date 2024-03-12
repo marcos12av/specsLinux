@@ -46,6 +46,13 @@ class linuxSpec:
                     diskPath = "/dev/" + diskSectionSplitText[0] + diskText
                     return diskPath 
         return "Sin datos"
+    
+    def diskInfoLVM(self):
+        lvmListDisk = []
+        for disk in self.diskArray():
+            for diskSection in disk:
+                if "lvm" in diskSection:
+                    break
 
     def shellCMD(self, shellCMD):
         outcommand = subprocess.run(shellCMD, shell=True, capture_output=True, text=True)
@@ -99,5 +106,6 @@ fileSpecs.write("Particionado del sistema (LVM):\t\t\t\n")
 temp = systemOS.diskArray()
 partitionSplit = temp[0][0].split()
 partLVM = "/dev/" + partitionSplit[0] + ": " + partitionSplit[3]
-print(partLVM)
-
+print(systemOS.diskArray())
+for x in temp:
+    print(x)
