@@ -1,17 +1,175 @@
 Características Generales
-Nombre de host:								home
-Versión del sistema operativo:				Linux Mint 21.2
-Dirección IP:								Características Generales
-Nombre de host:								home
-Versión del sistema operativo:				Linux Mint 21.2
-Dirección IP:								Características Generales
-Nombre de host:								home
-Versión del sistema operativo:				Linux Mint 21.2
-Dirección IP:								Características Generales
-Nombre de host:								192.168.1.66 2806:102e:12:70ce:f1a4:a0c:c04a:ae26 2806:102e:12:70ce:27db:f93a:5407:eb50 
-Versión del sistema operativo:				Linux Mint 21.2
-Dirección IP:								192.168.1.66 2806:102e:12:70ce:f1a4:a0c:c04a:ae26 2806:102e:12:70ce:27db:f93a:5407:eb50 
-Versión base del kernel:					Linux 5.15.0-94-generic
-Versión del kernel:							#104-Ubuntu SMP Tue Jan 9 15:25:40 UTC 2024 x86_64 GNU/Linux
-Fecha de instalación original:				2023-11-12 20:02
-Fabricante del sistema:						
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+/dev/			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+/dev/			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+/dev/			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+/dev/			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+/dev/			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
+Características Generales
+Nombre de host:								Sysadmin
+Versión del sistema operativo:				Ubuntu 22.04.4 LTS
+Dirección IP:								192.168.100.124 172.17.0.1 
+Versión base del kernel:					Linux 6.5.0-17-generic
+Versión del kernel:							#17~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 16 14:32:32 UTC 2 x86_64 GNU/Linux
+Fecha de instalación original:				2023-09-06 08:47
+Fabricante del sistema:						 
+Modelo el sistema:							 
+Tipo de sistema:							x86-64
+Procesador(es) virtual(es):					4
+Versión del BIOS:							5.12
+
+Discos duros virtuales:						2 unidades
+Ubicación de discos en host:				
+Unidades lógicas de almacenamiento:			2 unidades
+											/dev/sda para SO
+											Sin datos
+Particionado del sistema (LVM):			
