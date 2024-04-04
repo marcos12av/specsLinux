@@ -22,7 +22,7 @@ class linuxSpec:
     def diskArray (self):
         # lsblk detect disks and save disks and partitions in arrays
         textLineDisk = []
-        diskCommand = self.shellCMD("lsblk")
+        diskCommand = self.shellCMD("lsblk -o NAME,SIZE,MOUNTPOINT,TYPE")
         diskCommandLine = diskCommand.split('\n')
         for linedisk in diskCommandLine:
                 if "disk" in linedisk:
@@ -51,8 +51,17 @@ class linuxSpec:
         lvmListDisk = []
         for disk in self.diskArray():
             for diskSection in disk:
+                lvmDiskInfo = []
+                if "disk" in diskSection:
+                    partsDisk = diskSection.split()
+                    lvmDiskInfo.append(partsDisk[0])
                 if "lvm" in diskSection:
-                    break
+                    partsDisk = diskSection.split()
+                    lvmDiskInfo.append(partsDisk[0])
+                    lvmDiskInfo.append(partsDisk[1])
+                    lvmDiskInfo.append(partsDisk[2])
+                lvmListDisk.append(lvmDiskInfo)
+        return lvmListDisk
 
     def shellCMD(self, shellCMD):
         outcommand = subprocess.run(shellCMD, shell=True, capture_output=True, text=True)
@@ -102,10 +111,4 @@ testDiskCache = "\t\t\t\t\t\t\t\t\t\t\t" + systemOS.diskInfo("/var/cache/ecarto"
 fileSpecs.write(testDiskCache)
 fileSpecs.write("Particionado del sistema (LVM):\t\t\t\n")
 
-
-temp = systemOS.diskArray()
-partitionSplit = temp[0][0].split()
-partLVM = "/dev/" + partitionSplit[0] + ": " + partitionSplit[3]
-print(systemOS.diskArray())
-for x in temp:
-    print(x)
+print(systemOS.diskInfoLVM())
