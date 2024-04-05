@@ -111,4 +111,4 @@ testDiskCache = "\t\t\t\t\t\t\t\t\t\t\t" + systemOS.diskInfo("/var/cache/ecarto"
 fileSpecs.write(testDiskCache)
 fileSpecs.write("Particionado del sistema (LVM):\t\t\t\n")
 
-print(systemOS.diskInfoLVM())
+print(systemOS.diskArray())
