@@ -20,7 +20,7 @@ class linuxSpec:
         return hostnamePiece
 
     def diskArray (self):
-        # lsblk detect disks and save disks and partitions in arrays
+        # lsblk detect disks and save disks and partitions in array
         textLineDisk = []
         diskCommand = self.shellCMD("lsblk -o NAME,SIZE,MOUNTPOINT,TYPE")
         diskCommandLine = diskCommand.split('\n')
@@ -50,19 +50,35 @@ class linuxSpec:
     def diskInfoLVM(self):
         lvmListDisk = []
         for disk in self.diskArray():
+            lvmDiskInfo = []
             for diskSection in disk:
-                lvmDiskInfo = []
+                lvmSpecDiskpart = []
                 if "disk" in diskSection:
                     partsDisk = diskSection.split()
                     lvmDiskInfo.append(partsDisk[0])
                 if "lvm" in diskSection:
                     partsDisk = diskSection.split()
-                    lvmDiskInfo.append(partsDisk[0])
-                    lvmDiskInfo.append(partsDisk[1])
-                    lvmDiskInfo.append(partsDisk[2])
-                lvmListDisk.append(lvmDiskInfo)
-        return lvmListDisk
-
+                    lvmSpecDiskpart.append(partsDisk[0])
+                    lvmSpecDiskpart.append(partsDisk[1])
+                    lvmSpecDiskpart.append(partsDisk[2])
+                    lvmDiskInfo.append(lvmSpecDiskpart)
+            lvmListDisk.append(lvmDiskInfo)
+        lvmFullData = []
+        for lvm in lvmListDisk:
+            for lvmpart in lvm:
+                if isinstance(lvmpart, list):
+                        textdir = lvmpart[0][2:]
+                        textLVM = "/dev/" + lvm[0] + "/" + textdir + ": " + lvmpart[1] + " " + "montado en " + lvmpart[2]
+                        lvmFullData.append(textLVM)
+        return lvmFullData
+    
+    def TextDiskSpace(self, KeyWord):
+        for disk in self.diskArray():
+            for diskPart in disk:
+                if KeyWord in diskPart:
+                    diskPartSplit = disk[0].split()
+                    return diskPartSplit[1]
+                
     def shellCMD(self, shellCMD):
         outcommand = subprocess.run(shellCMD, shell=True, capture_output=True, text=True)
         return outcommand.stdout
@@ -110,5 +126,20 @@ fileSpecs.write(textDiskSO)
 testDiskCache = "\t\t\t\t\t\t\t\t\t\t\t" + systemOS.diskInfo("/var/cache/ecarto", " para caché de mapas") + "\n"
 fileSpecs.write(testDiskCache)
 fileSpecs.write("Particionado del sistema (LVM):\t\t\t\n")
+#Print LVM Partition
+for line in systemOS.diskInfoLVM():
+    fileSpecs.write(line)
+    fileSpecs.write("\n")
 
-print(systemOS.diskArray())
+fileSpecs.write("Espacio total de disco SO:\t\t\t\t\t")
+fileSpecs.write(systemOS.TextDiskSpace("boot"))
+fileSpecs.write("\n")
+fileSpecs.write("Espacio total de disco caché de mapas:\t\t")
+fileSpecs.write(systemOS.TextDiskSpace("cache"))
+fileSpecs.write("\n")
+fileSpecs.write("Idioma de entrada:\t\t\t\t\t\t\t")
+fileSpecs.write(systemOS.shellCMD("echo $LANG"))
+fileSpecs.write("Zona horaria:\t\t\t\t\t\t\t\t")
+fileSpecs.write(systemOS.shellCMD("timedatectl | awk '/Time zone/{print $3, $4, $5, $6}'G"))
+fileSpecs.write("Cantidad total de memoria física:\t\t\t")
+fileSpecs.write(systemOS.shellCMD("free -h | awk '/Mem/{print $2}'"))
