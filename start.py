@@ -78,6 +78,11 @@ class linuxSpec:
                 if KeyWord in diskPart:
                     diskPartSplit = disk[0].split()
                     return diskPartSplit[1]
+                else:
+                    noDisk = True
+        if noDisk:
+            return "Sin disco / particion"
+
                 
     def shellCMD(self, shellCMD):
         outcommand = subprocess.run(shellCMD, shell=True, capture_output=True, text=True)
